@@ -1,6 +1,5 @@
 import React from 'react';
-import { DatePicker, message} from 'antd';
-import Button from 'antd/lib/button';
+import {Button, DatePicker, message} from 'antd';
 import './App.css';
 
 class App extends React.Component{

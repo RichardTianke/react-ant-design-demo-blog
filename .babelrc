@@ -1,7 +1,16 @@
 {
-  "presets": ["latest", "react"],
+  "presets": [
+    "react-app",
+    "react"
+  ],
   "plugins": [
-    ["import", { "libraryName": "antd", "style": "css" }],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ],
     "transform-class-properties",
     "transform-object-rest-spread"
   ]
