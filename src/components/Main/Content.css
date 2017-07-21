@@ -1,0 +1,11 @@
+.content {
+    margin: 80px 16px 0;
+    overflow: initial;
+}
+
+.content-section{
+    padding: 24px;
+    margin-top: 16px;
+    background: #fff;
+    text-align: center;
+}

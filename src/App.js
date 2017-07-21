@@ -1,32 +1,19 @@
 import React from 'react';
-import {Button, DatePicker, message} from 'antd';
+import {Layout} from 'antd';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
+import Sidebar from "./components/Sidebar/index";
+import Main from "./components/Main/index";
 
-class App extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            date: '',
-        };
-    }
-
-    handleChange(date){
-        message.info('您选择的日期是: ' + date.toString());
-        this.setState({
-            date
-        });
-    }
-
-    render(){
+class App extends React.Component {
+    render() {
         return (
-            <div style={{ with: 400, margin: '100px auto'}}>
-
-                <DatePicker onChange={value => this.handleChange(value)}/>
-                <div style={{ marginTop: 20, marginBottom: 20}}>当前日期: {this.state.date.toString()}</div>
-
-
-                <Button type="primary">Button</Button>
-            </div>
+            <Router>
+                <Layout>
+                    <Sidebar/>
+                    <Main/>
+                </Layout>
+            </Router>
         );
     }
 }
